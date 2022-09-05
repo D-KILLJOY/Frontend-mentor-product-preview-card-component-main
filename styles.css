@@ -26,6 +26,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 img {
@@ -113,7 +114,21 @@ img {
 	font-weight: 700;
 }
 
-.button:hover {
+.attribution {
+	margin-top: 2rem;
+}
+
+.attribution p {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+.attribution p a {
+	color: rgb(14, 67, 175);
+	font-weight: 700;
+}
+
+.button:hover,
+.button:focus {
 	background-color: var(--dark-blue);
 }
 
