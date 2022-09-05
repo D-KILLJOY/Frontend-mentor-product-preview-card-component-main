@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+
+	/* ! COLOR VARIABLES  */
+	--dark-blue: hsl(212, 21%, 14%);
+	--grayish-Blue: hsl(228, 12%, 48%);
+	--White: hsl(0, 0%, 100%);
+	--Dark-cyan: hsl(158, 36%, 37%);
+	--Cream: hsl(30, 38%, 92%);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--Cream);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 34rem;
+}
+
+.small-image {
+	width: 34rem;
+	border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.big-image {
+	display: none;
+}
+
+.text {
+	background-color: var(--White);
+	padding: 2rem 3rem;
+	width: 34rem;
+	border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.light {
+	font-family: montserrat;
+	text-transform: uppercase;
+	color: var(--grayish-Blue);
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	letter-spacing: 0.6rem;
+	font-weight: 700;
+}
+
+.main-name {
+	font-family: fraunces;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 2rem;
+}
+
+.details {
+	font-size: 1.4rem;
+	font-family: montserrat;
+	color: var(--grayish-Blue);
+	font-weight: 700;
+	margin-bottom: 3rem;
+}
+
+.price {
+	font-size: 3rem;
+	color: var(--Dark-cyan);
+	font-family: fraunces;
+	font-weight: 700;
+}
+
+.d-price {
+	font-size: 1.4rem;
+	color: var(--grayish-Blue);
+	font-family: montserrat;
+	text-decoration: line-through;
+	margin-left: 1rem;
+	font-weight: 700;
+	position: relative;
+	top: -0.6rem;
+}
+
+.button {
+	background-color: var(--Dark-cyan);
+	color: var(--White);
+	text-decoration: none;
+	margin: auto;
+	display: block;
+	padding: 1.4rem;
+	margin-top: 2rem;
+	text-align: center;
+	border-radius: 1rem;
+	font-size: 1.4rem;
+	font-family: montserrat;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: var(--dark-blue);
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		width: 65rem;
+	}
+
+	.small-image {
+		display: none;
+	}
+
+	.big-image {
+		display: block;
+		height: 43rem;
+		border-radius: 1.5rem 0 0 1.5rem;
+	}
+
+	.text {
+		background-color: var(--White);
+		padding: 3rem 3rem 3rem 3rem;
+		width: 30rem;
+		border-radius: 0 1.5rem 1.5rem 0;
+	}
+
+	.main-name {
+		font-family: fraunces;
+		font-size: 3.2rem;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 2rem;
+	}
+
+	.button {
+		margin-top: 3.5rem;
+	}
+}
