@@ -104,7 +104,9 @@ img {
 	color: var(--White);
 	text-decoration: none;
 	margin: auto;
-	display: block;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 	padding: 1.4rem;
 	margin-top: 2rem;
 	text-align: center;
